@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
     <title>My Quiz</title>
-    <div id="clock">
-        <h4>Timer: <span id="timer">0</span></h4> 
+    <div class="right">
+        <h4>Time: <span id="timeLeft">0</span></h4>
     </div>
 </head>
 <body>
-<body id="body">
-    <div>
-        <button class="score">Highest Score</button>
-    </div>
-    <div>
-        <div id="quiz">
-            <div id="content" class="content">
-                <h1>
-                    My Quiz!
-                </h1>
-                <h4>
-                    Click to Start Quiz
-                </h4>
-                <button onclick="start()">Start The Quiz! You Got This!</button>
+    <div id="nav">
+        <!--moves highscore button to the left of the nav bar-->
+        <div class="left">
+            <a onclick="getScore()" href="#"><h4>View High Score</h4></a>
         </div>
-    </div>
-    <script src="./js/quiz.js"></script>
-    
-</body>
+        
+     </div>
+     <!-- main section of code quiz-->
+     <div id="quiz">
+         <div id="quizBody">
+             <h1>
+                 My Personal Bias Quiz!
+             </h1>
+             <h3>
+                Click To Start Quiz!
+             </h3>
+             <!--script for button-->
+             <button onclick="start()">Start!</button>
+         </div>
+     </div>
+    </body>
+    <script src="./js/quiz.js" type="text/javascript"></script>
 </html>
+
