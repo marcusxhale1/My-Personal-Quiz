@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
     <title>My Quiz</title>
-    <div id="clock"><span id="timer">0</span> </div>
+    <div id="clock">
+        <h4>Timer: <span id="timer">0</span></h4> 
+    </div>
 </head>
 <body>
 <body id="body">
@@ -13,8 +16,15 @@
         <button class="score">Highest Score</button>
     </div>
     <div>
-        <div>
+        <div id="quiz">
             <div id="content" class="content">
+                <h1>
+                    My Quiz!
+                </h1>
+                <h4>
+                    Click to Start Quiz
+                </h4>
+                <button onclick="start()">Start The Quiz! You Got This!</button>
         </div>
     </div>
     <script src="./js/quiz.js"></script>
